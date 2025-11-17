@@ -1,2 +1,150 @@
-<h1>Aryan</h1>
-<p>Personal page coming soon!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Flick | Personal Page</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f4f4;
+      --text: #1e1e1e;
+      --accent: #2563eb;
+      --card: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --text: #e2e8f0;
+        --card: #1e293b;
+        --shadow: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: min(900px, 100%);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #64748b;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px var(--shadow);
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Aryan Flick</h1>
+      <p class="tagline">Aspiring developer building delightful web experiences.</p>
+      <p>Welcome to my corner of the team site — a snapshot of what I’m learning, building, and exploring.</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I enjoy turning ideas into polished, interactive interfaces. My current focus is sharpening my HTML, CSS,
+        and JavaScript fundamentals while experimenting with modern tooling and creative UI patterns.
+      </p>
+    </section>
+
+    <section>
+      <h2>Current Projects</h2>
+      <ul>
+        <li><strong>Github-Project:</strong> Collaborating with teammates to showcase individual profiles.</li>
+        <li><strong>Mini Games Collection:</strong> Recreating classic games like Simon to level up DOM skills.</li>
+        <li><strong>Design Systems Study:</strong> Exploring typography, layout, and accessibility best practices.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Goals</h2>
+      <ul>
+        <li>Ship more small projects to build momentum and confidence.</li>
+        <li>Learn a component-driven framework (React or Svelte) by the end of the year.</li>
+        <li>Contribute meaningfully to open-source projects on GitHub.</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <h2>Get in Touch</h2>
+      <a href="mailto:hello@aryanflick.dev">Email</a>
+      <a href="https://github.com/AryanFlick" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/aryanflick" target="_blank" rel="noreferrer">LinkedIn</a>
+    </section>
+
+    <footer>
+      Made with ❤️, curiosity, and lots of coffee.
+    </footer>
+  </main>
+</body>
+</html>
